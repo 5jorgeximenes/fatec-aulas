@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app>
+<head lang="pt-br">
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script  src="js/angular/angular.min.js"></script>
+	<script  src="js/jquery-1.11.3.min.js"></script>
+	<script  src="js/bootstrap.min.js"></script>
+	
+	
+	
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<h1 style="color:white;"><marquee behavior="alternate">App Angular Busca  JORGE SOARES XIMENES 5 Periodo</marquee></h1>
+	</div>
+</nav>
+	<div class="form-group">
+		<div class="container">
+			<div>
+				<label title="busca">BUSCA: </label>
+				<input aria-label="busca" type="search" class="form-control input-sm" ng-model="busca"/>
+			</div>
+			<div ng-controller="CtrlLista">
+				<ul>
+					<li ng-repeat="pessoa in pessoas | filter:busca">
+					{{pessoa.nome}} - {{pessoa.cidade}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<script>
+	var CtrlLista = function($scope){
+		$scope.pessoas = [
+			{nome: "Jorge Ximenes", cidade:"Porto Velho"},
+			{nome: "Odacy Farias",cidade:"Porto Velho"},
+            {nome: "Juliana Araujo",cidade:"Porto Velho"} Beltrão"}
+		];
+	}
+</script>
+</body>
+</html>
+

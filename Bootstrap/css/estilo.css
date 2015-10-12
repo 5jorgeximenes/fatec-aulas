@@ -1,0 +1,24 @@
+/* CSS personalizado */
+
+.lineGray{
+	background: gray;
+}
+
+.lineBlue{
+	background:Blue;
+
+}
+
+.lineRed{
+	background:red;
+}
+
+.lineYellow{
+	background:yellow;
+}
+
+.linePersonal{
+	background:green;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

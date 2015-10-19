@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <title>AULA 06</title>
+        <!-- Define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=.10">
+        
+       <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen">
+        <link rel="stylesheet" href="bootstrap/css/estilo.css">
+        
+    </head>
+<body>
+
+<div class="container">
+    <marquee behavior="alternate">JORGE SOARES XIMENES 5 Periodo</marquee>
+    <br>
+    <h1>Aula 06</h1>
+    <h3>Grids</h3>
+    <h4>Aninhamento de colunas offsets</h4>
+</div>
+<br>
+    
+<div class="container" >
+    <div class="row"> <!--Box 1-->
+         <div class="col-xs-6 lineBlue"> <!--Coluna de 6 grids-->
+            <div class="row">
+                <div class="col-xs-4 lineRed">1</div>
+                <div class="col-xs-4 lineGray">2</div>
+                <div class="col-xs-4 lineRed">3</div>
+            </div>
+             <div class="row">
+                <div class="col-xs-4 lineRed">4</div>
+                <div class="col-xs-4 lineGray">5</div>
+                <div class="col-xs-4 lineRed">6</div>
+            </div>
+         </div> <!--Fim da coluna de grid -->
+        
+        <div class="col-xs-6"> <!-- voluna de  6 grids -->
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra aliquet magna et laoreet. Quisque imperdiet diam vel sem varius, ut dignissim felis tempor. Duis et risus tortor. Integer vitae fermentum urna. Vivamus orci dolor, lobortis consequat consectetur in, pretium et orci. Vestibulum elementum eros a orci egestas, sit amet faucibus dolor semper. Sed blandit sed tellus vitae hendrerit. Pellentesque id urna ex. Aliquam dui libero, gravida nec eros id, sodales elementum quam. Phasellus hendrerit metus quis eleifend placerat. Phasellus tristique purus at felis vestibulum finibus. Donec tristique ex justo, vel ornare risus faucibus ut.
+            </p>
+                       
+        </div> 
+      </div> <!-- BOX 1 FIM -->
+    
+    <div class="row lineYellow">
+        <div class="col-xs-6 lineRed col-xs-offset-3">offset</div>
+    </div>
+      
+    
+</div>
+    
+
+    
+
+    <script src="bootstrap/js/jquery-2.1.4.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/main.js"></script>
+    
+</body>    
+</html>
